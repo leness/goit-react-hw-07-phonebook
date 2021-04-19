@@ -16,10 +16,10 @@ axios.defaults.baseURL = 'http://localhost:4040';
 const fetchContacts = () => dispatch => {
     dispatch(fetchContactRequest());
 
-    // axios
-    //     .get('/contacts')
-    //     .then(({ data }) => dispatch(fetchContactsSuccess(data)))
-    //     .catch(error => dispatch(fetchContactsError(error)));
+   axios
+        .get('/contacts')
+        .then(({ data }) => dispatch(fetchContactsSuccess(data)))
+        .catch (error => dispatch(fetchContactsError(error)));  
 }
 
 const addContacts = (name, number) => dispatch => {
@@ -27,7 +27,7 @@ const addContacts = (name, number) => dispatch => {
         name,
         number,
     };
-console.log(contact);
+    console.log(contact);
     dispatch(addContactRequest());
 
     axios

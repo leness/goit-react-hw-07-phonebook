@@ -6,6 +6,7 @@ const getFilter = state => state.contact.filter;
 
 const getAllContacts = state => state.contact.contacts;
 
+
 // const getVisibleContacs = state => {
 //     const contacts = getAllContacts(state);
 //     const filter = getFilter(state);
@@ -21,12 +22,17 @@ const getVisibleContacs = createSelector(
     [getAllContacts, getFilter],
     (contacts, filter) => {
         const normalizeSearch = filter.toLowerCase();
-        
+        console.log(contacts);
+       
+       
         return contacts.filter(({ name }) =>
             name.toLowerCase().includes(normalizeSearch),
         );
     },
 );
+
+console.log(getVisibleContacs);
+
 
 export default {
     getLoading,

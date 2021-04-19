@@ -6,7 +6,7 @@ import contactsOperations from '../../redux/contacts/contacts-operations';
 import contactSelectors from '../../redux/contacts/contacts-selectors'
 
 
-class ContactForm extends Component{
+class ContactForm extends Component {
     state = {
         name: '',
         number: '',
@@ -60,7 +60,6 @@ class ContactForm extends Component{
                             type='number'
                             name='number'
                             required
-                            // placeholder="+38(067)777-77-77"
                             id={this.numberInputId}
                             value={this.state.number}
                             onChange={this.handleChange} />

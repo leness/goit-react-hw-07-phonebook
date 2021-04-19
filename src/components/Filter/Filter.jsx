@@ -15,6 +15,8 @@ const Filter = ({ value, onChange }) => {
     )
 }
 
+
+
 const mapStateToProps = state => ({
     value: contactsSelectors.getFilter(state),
 });
