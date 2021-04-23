@@ -1,29 +1,9 @@
 {
   "contacts": [
     {
-      "name": "a",
-      "number": "4",
-      "id": 2
-    },
-    {
       "name": "catkkk",
       "number": "344",
       "id": 4
-    },
-    {
-      "name": "dfgh",
-      "number": "465",
-      "id": 5
-    },
-    {
-      "name": "rdtyh",
-      "number": "455555",
-      "id": 7
-    },
-    {
-      "name": "fhghjrfx",
-      "number": "98767564",
-      "id": 15
     },
     {
       "name": "hkjkl",
@@ -49,6 +29,11 @@
       "name": "cat",
       "number": "555",
       "id": 40
+    },
+    {
+      "name": "kjkjg",
+      "number": "333",
+      "id": 41
     }
   ]
 }
